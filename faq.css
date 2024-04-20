@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body::-webkit-scrollbar {
+    width: 5px; /* Ширина всего элемента навигации */
+}
+  
+body::-webkit-scrollbar-track {
+    background: #dfdfdf; /* Цвет дорожки */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #000000; /* Цвет бегунка */
+}
+
+body {
+    margin: 0;
+}
+
+main  {
+    background-color: #ffffff;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+
+.container {
+    max-width: 1354px;
+    width: 90%;
+    margin: auto;
+    z-index: 2;
+}
+
+.navigationpanel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.namestore {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    color: white;
+    margin: 0;
+    padding-top: 9px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar {
+    width: 100px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: space-between;
+    height: 62px;
+}
+
+.navbar .menu-items {
+    display: flex;
+}
+
+.navbar .nav-container li {
+    list-style: none;
+}
+
+.navbar .nav-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+
+.nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+}
+
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+.nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+    padding-top: 120px;
+    background-color: black;
+    height: 80vh;
+    width: 160px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -281px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+
+.navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+}
+
+.nav-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.logo {
+    display: none;
+}
+
+main > .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videobanner {
+    width: 25.7%;
+    height: 25.7%;
+    display: flex;
+    align-items: center;
+
+}
+
+.faq {
+    color: #000000;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.faqlist {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #000000;
+}
+
+.spanbold {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    height: 150px;
+    background-color: black;
+}
+
+.namestore2 {
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    color: white;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.vk__logo {
+    width: 32px;
+    height: 32px;
+    margin-left: 37px;
+}
